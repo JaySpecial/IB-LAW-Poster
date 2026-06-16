@@ -72,18 +72,18 @@
         <div class="grid grid-cols-2 gap-4 flex-grow">
             <!-- Column 1 -->
             <div class="bg-lightgray p-5 rounded-xl border border-gray-200 flex flex-col justify-center">
-                <h2 class="text-lg font-bold text-navy mb-2 border-l-4 border-ochre pl-3">Introduction</h2>
-                <p class="leading-relaxed text-gray-700 mb-3">
+                <h2 class="text-lg font-bold text-navy mb-3 border-l-4 border-ochre pl-3">Introduction</h2>
+                <p class="leading-relaxed text-gray-700 mb-4">
                     AI tools are increasingly used for contract drafting, review, translation, and negotiation. In cross-border contracts, mistakes have higher consequences due to varying legal systems. 
                 </p>
-                <div class="bg-navy/5 border border-navy/10 rounded-lg p-3 mb-3 flex items-start">
+                <div class="bg-navy/5 border border-navy/10 rounded-lg p-3 mb-4 flex items-start">
                     <i class="fas fa-exclamation-circle text-ochre mt-0.5 mr-3 text-base"></i>
-                    <p class="text-[12px] text-navy">
+                    <p class="text-[12px] text-navy leading-relaxed">
                         <strong class="font-bold">The Legal Gap:</strong> Traditional commercial law relies on human intent; AI generation blurs the lines of agency and accountability in cross-border agreements.
                     </p>
                 </div>
                 <div class="p-3 bg-white border border-red-100 rounded-lg shadow-sm">
-                    <p class="font-semibold text-red-700 text-[12px]">
+                    <p class="font-semibold text-red-700 text-[12px] leading-relaxed">
                         The central issue is liability: <span class="text-gray-800 font-normal">who bears the risk if the AI-generated contract text is wrong?</span>
                     </p>
                 </div>
@@ -91,16 +91,51 @@
 
             <!-- Column 2 -->
             <div class="p-5 rounded-xl border-2 border-navy flex flex-col justify-center">
-                <h2 class="text-lg font-bold text-navy mb-3 flex items-center">
+                <h2 class="text-lg font-bold text-navy mb-4 flex items-center">
                     <i class="fas fa-robot text-ochre mr-3 text-base"></i> AI-Assisted Contracting
                 </h2>
-                <ul class="space-y-3">
-                    <li class="flex items-start text-gray-700"><i class="fas fa-pen-nib text-navy w-6 text-center mt-0.5 shrink-0"></i> <span><strong>Drafting clauses</strong> (e.g., limitation of liability)</span></li>
-                    <li class="flex items-start text-gray-700"><i class="fas fa-search text-navy w-6 text-center mt-0.5 shrink-0"></i> <span><strong>Reviewing contracts</strong> (identifying non-standard terms)</span></li>
-                    <li class="flex items-start text-gray-700"><i class="fas fa-list-alt text-navy w-6 text-center mt-0.5 shrink-0"></i> <span><strong>Summarizing obligations</strong> (danger of omitting critical conditions)</span></li>
-                    <li class="flex items-start text-gray-700"><i class="fas fa-language text-navy w-6 text-center mt-0.5 shrink-0"></i> <span><strong>Translating legal terms</strong> (high risk of nuance loss)</span></li>
-                    <li class="flex items-start text-gray-700"><i class="fas fa-code-compare text-navy w-6 text-center mt-0.5 shrink-0"></i> <span><strong>Comparing contract versions</strong> (overlooking subtle redlines)</span></li>
+                <ul class="space-y-4">
+                    <li class="flex items-start text-gray-700"><i class="fas fa-pen-nib text-navy w-6 text-center mt-0.5 shrink-0"></i> <span class="leading-relaxed"><strong>Drafting clauses</strong> (e.g., limitation of liability)</span></li>
+                    <li class="flex items-start text-gray-700"><i class="fas fa-search text-navy w-6 text-center mt-0.5 shrink-0"></i> <span class="leading-relaxed"><strong>Reviewing contracts</strong> (identifying non-standard terms)</span></li>
+                    <li class="flex items-start text-gray-700"><i class="fas fa-list-alt text-navy w-6 text-center mt-0.5 shrink-0"></i> <span class="leading-relaxed"><strong>Summarizing obligations</strong> (danger of omitting critical conditions)</span></li>
+                    <li class="flex items-start text-gray-700"><i class="fas fa-language text-navy w-6 text-center mt-0.5 shrink-0"></i> <span class="leading-relaxed"><strong>Translating legal terms</strong> (high risk of nuance loss)</span></li>
+                    <li class="flex items-start text-gray-700"><i class="fas fa-code-compare text-navy w-6 text-center mt-0.5 shrink-0"></i> <span class="leading-relaxed"><strong>Comparing contract versions</strong> (overlooking subtle redlines)</span></li>
                 </ul>
+            </div>
+        </div>
+
+        <!-- === AI Adoption Donut Chart + Warning Callout === -->
+        <div class="mt-3 grid grid-cols-2 gap-4 shrink-0">
+            <!-- Donut Chart -->
+            <div class="bg-white border border-gray-200 rounded-xl p-4 flex items-center justify-center shadow-sm">
+                <div class="flex items-center gap-4">
+                    <!-- Inline SVG Donut Chart: circumference = 2π×48 ≈ 301.59; ~70% = 211.11 -->
+                    <svg viewBox="0 0 120 120" class="w-[90px] h-[90px] shrink-0">
+                        <!-- Background track (full circle, light gray) -->
+                        <circle cx="60" cy="60" r="48" fill="none" stroke="#e5e7eb" stroke-width="14" />
+                        <!-- ~70% filled arc in Navy -->
+                        <circle cx="60" cy="60" r="48" fill="none" stroke="#0f2942" stroke-width="14"
+                            stroke-dasharray="211.11 301.59" stroke-dashoffset="0"
+                            transform="rotate(-90 60 60)" stroke-linecap="round" />
+                        <!-- Center text -->
+                        <text x="60" y="56" text-anchor="middle" style="font-size:16px;font-weight:800;fill:#0f2942;font-family:Inter,sans-serif;">&gt;70%</text>
+                        <text x="60" y="72" text-anchor="middle" style="font-size:9px;font-weight:600;fill:#b8860b;font-family:Inter,sans-serif;">Adoption</text>
+                    </svg>
+                    <div>
+                        <p class="text-[11px] font-bold text-navy leading-tight">AI Adoption<br>in Legal</p>
+                        <p class="text-[10px] text-gray-500">73% of legal departments<br>now use or pilot AI tools</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Warning Callout -->
+            <div class="bg-red-50 border-2 border-red-300 rounded-xl p-4 flex items-start gap-3 shadow-sm">
+                <i class="fas fa-triangle-exclamation text-red-600 text-xl mt-0.5 shrink-0"></i>
+                <div>
+                    <p class="text-[11px] font-bold text-red-800 leading-snug mb-1">Speed vs. Accuracy Trade-Off</p>
+                    <p class="text-[11px] text-red-700 leading-snug">
+                        AI translates up to <strong>3,000 words per minute</strong> (10× faster than human translators), but technical translation errors can spike to <span class="font-extrabold text-red-900">30%</span> without human oversight.<sup>1</sup>
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -128,22 +163,68 @@
         <div class="mb-4 text-[11px] font-bold text-gray-400 border-b pb-1 uppercase tracking-widest shrink-0">Part II: The Friction (Risks &amp; Case Study)</div>
 
         <!-- Top Section (Liability Problems) -->
-        <div class="bg-white border text-center p-5 rounded-xl shadow-sm mb-4 border-t-4 border-red-600 relative overflow-hidden shrink-0">
+        <div class="bg-white border text-center p-4 rounded-xl shadow-sm mb-2 border-t-4 border-red-600 relative overflow-hidden shrink-0">
             <i class="fas fa-exclamation-triangle absolute top-4 right-4 text-4xl text-red-50 opacity-50"></i>
-            <h2 class="text-lg font-bold text-red-700 mb-2 uppercase tracking-wide text-left relative z-10">The Root Cause</h2>
-            <p class="text-[13px] font-medium text-gray-800 leading-relaxed text-left relative z-10 space-y-2 mb-3">
+            <h2 class="text-lg font-bold text-red-700 mb-1 uppercase tracking-wide text-left relative z-10">The Root Cause</h2>
+            <p class="text-[12px] font-medium text-gray-800 leading-relaxed text-left relative z-10 mb-2">
                 "Generative AI systems are probabilistic, predicting likely text patterns rather than providing authoritative legal analysis. AI-generated contract language may appear convincing while containing inaccuracies."
             </p>
-            <div class="flex justify-start space-x-3 mt-3 relative z-10">
-                <span class="bg-red-50 text-red-700 px-3 py-1 rounded-full text-[10px] font-bold border border-red-100">Incorrect legal clauses</span>
-                <span class="bg-red-50 text-red-700 px-3 py-1 rounded-full text-[10px] font-bold border border-red-100">Translation errors</span>
-                <span class="bg-red-50 text-red-700 px-3 py-1 rounded-full text-[10px] font-bold border border-red-100">Hallucinated references</span>
+            <!-- === 2x2 Contract Risk Heatmap === -->
+            <div class="relative z-10">
+                <p class="text-[9px] font-bold text-gray-500 uppercase tracking-wider mb-1 text-left">Contract Risk Heatmap</p>
+                <!-- Heatmap with Y-Axis on left -->
+                <div class="flex gap-1">
+                    <!-- Y-Axis Column (left side) -->
+                    <div class="flex flex-col items-center justify-between shrink-0" style="width: 32px; height: 160px;">
+                        <span class="text-[7px] font-bold text-gray-400 leading-none">High ↑</span>
+                        <span class="text-[7px] text-gray-400 font-bold tracking-wider uppercase" style="writing-mode: vertical-rl; transform: rotate(180deg);">Probability</span>
+                        <span class="text-[7px] font-bold text-gray-400 leading-none">Low ↓</span>
+                    </div>
+                    <!-- Heatmap Grid + X-Axis -->
+                    <div class="flex-1">
+                        <div class="grid grid-cols-2 gap-[3px]" style="height: 160px;">
+                            <!-- Top-Left: High Prob / Low Impact (Yellow) -->
+                            <div class="bg-yellow-100 border-2 border-yellow-400 rounded-lg p-2 flex flex-col justify-center items-center text-center relative">
+                                <span class="text-[7px] font-bold text-yellow-700 absolute top-1 left-2">HIGH PROB</span>
+                                <i class="fas fa-robot text-yellow-500 text-sm mb-0.5"></i>
+                                <p class="text-[10px] font-bold text-yellow-800 leading-tight">Boilerplate Hallucinations</p>
+                                <p class="text-[7px] text-yellow-700 leading-tight">AI invents plausible but fictitious clauses</p>
+                            </div>
+                            <!-- Top-Right: High Prob / High Impact (Dark Red) -->
+                            <div class="bg-red-900 border-2 border-red-700 rounded-lg p-2 flex flex-col justify-center items-center text-center relative">
+                                <span class="text-[7px] font-bold text-red-300 absolute top-1 left-2">HIGH PROB</span>
+                                <i class="fas fa-triangle-exclamation text-red-400 text-sm mb-0.5"></i>
+                                <p class="text-[10px] font-bold text-white leading-tight">Incoterm &amp; Delivery Mistranslations</p>
+                                <p class="text-[7px] text-red-200 leading-tight">Risk transfer points misstated; massive exposure</p>
+                            </div>
+                            <!-- Bottom-Left: Low Prob / Low Impact (Light Gray) -->
+                            <div class="bg-gray-100 border-2 border-gray-300 rounded-lg p-2 flex flex-col justify-center items-center text-center relative">
+                                <span class="text-[7px] font-bold text-gray-400 absolute top-1 left-2">LOW PROB</span>
+                                <i class="fas fa-text-height text-gray-400 text-sm mb-0.5"></i>
+                                <p class="text-[10px] font-bold text-gray-600 leading-tight">Minor Formatting Errors</p>
+                                <p class="text-[7px] text-gray-500 leading-tight">Cosmetic issues; readily corrected</p>
+                            </div>
+                            <!-- Bottom-Right: Low Prob / High Impact (Orange) -->
+                            <div class="bg-orange-100 border-2 border-orange-400 rounded-lg p-2 flex flex-col justify-center items-center text-center relative">
+                                <span class="text-[7px] font-bold text-orange-600 absolute top-1 left-2">LOW PROB</span>
+                                <i class="fas fa-file-contract text-orange-500 text-sm mb-0.5"></i>
+                                <p class="text-[10px] font-bold text-orange-800 leading-tight">Missing Liability Caps</p>
+                                <p class="text-[7px] text-orange-700 leading-tight">AI omits critical limitation clauses; unlimited exposure</p>
+                            </div>
+                        </div>
+                        <!-- X-Axis Labels -->
+                        <div class="flex justify-between mt-1">
+                            <span class="text-[7px] font-bold text-gray-400 tracking-wider uppercase">← Low Financial Impact</span>
+                            <span class="text-[7px] font-bold text-gray-400 tracking-wider uppercase">High Financial Impact →</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- The Risk Funnel -->
-        <div class="mb-4 rounded-xl p-5 bg-lightgray border border-gray-200 flex flex-col items-center flex-grow justify-center">
-            <h3 class="text-xs font-bold text-gray-500 mb-4 uppercase tracking-wider w-full text-center">The Risk Funnel</h3>
+        <div class="mb-2 rounded-xl p-4 bg-lightgray border border-gray-200 flex flex-col items-center flex-grow justify-center">
+            <h3 class="text-xs font-bold text-gray-500 mb-3 uppercase tracking-wider w-full text-center">The Risk Funnel</h3>
             
             <div class="flex flex-col items-center w-full space-y-1.5">
                 <div class="w-full bg-gray-300 text-navy font-bold py-2 rounded-lg shadow-sm text-center">AI Output Error</div>
@@ -157,23 +238,23 @@
         </div>
 
         <!-- The Case Study -->
-        <div class="bg-navy text-white p-5 rounded-xl shadow-lg border-l-8 border-ochre flex-shrink">
-            <h2 class="text-lg font-bold text-ochre mb-3 flex items-center">
+        <div class="bg-navy text-white p-4 rounded-xl shadow-lg border-l-8 border-ochre flex-shrink">
+            <h2 class="text-lg font-bold text-ochre mb-2 flex items-center">
                 <i class="fas fa-scale-balanced mr-3 text-white"></i> Case Study: AI Translation Error in a German–Spanish Sales Contract
             </h2>
-            <div class="bg-white/10 p-3 rounded-lg mb-3 leading-relaxed text-[12px]">
+            <div class="bg-white/10 p-3 rounded-lg mb-2 leading-relaxed text-[11px]">
                 <p>
                     <span class="font-bold text-ochre">Scenario:</span> A German company sells industrial components to a Spanish buyer. The seller uses an AI tool to translate and draft the English contract. The AI mistranslates a delivery obligation and incorrectly summarizes the agreed Incoterm, creating uncertainty about when risk passes. During transport, goods are damaged. Both parties claim the other side bears the risk.
                 </p>
             </div>
-            <h3 class="font-bold text-[13px] mb-2 border-b border-white/20 pb-1">Legal Questions:</h3>
-            <ul class="space-y-1.5 text-[12px] mb-3">
+            <h3 class="font-bold text-[12px] mb-1 border-b border-white/20 pb-1">Legal Questions:</h3>
+            <ul class="space-y-1 text-[11px] mb-2">
                 <li class="flex items-start"><i class="fas fa-question-circle text-ochre mt-0.5 mr-2 shrink-0"></i> <span>Was the AI-generated wording part of the contract?</span></li>
                 <li class="flex items-start"><i class="fas fa-question-circle text-ochre mt-0.5 mr-2 shrink-0"></i> <span>Which party bears the risk of the mistranslation?</span></li>
                 <li class="flex items-start"><i class="fas fa-question-circle text-ochre mt-0.5 mr-2 shrink-0"></i> <span>Does the governing law or arbitration clause determine where the dispute is resolved?</span></li>
             </ul>
-            <h3 class="font-bold text-[13px] mb-2 border-b border-white/20 pb-1">Legal Resolution:</h3>
-            <ul class="space-y-2 text-[12px]">
+            <h3 class="font-bold text-[12px] mb-1 border-b border-white/20 pb-1">Legal Resolution:</h3>
+            <ul class="space-y-1.5 text-[11px]">
                 <li class="flex items-start"><i class="fas fa-gavel text-ochre mt-0.5 mr-2 shrink-0"></i> <span><strong class="text-ochre">The Trap (CISG Art. 8):</strong> The AI's mistranslated terms are legally binding on the German seller because the Spanish buyer reasonably relied on them.</span></li>
                 <li class="flex items-start"><i class="fas fa-gavel text-ochre mt-0.5 mr-2 shrink-0"></i> <span><strong class="text-ochre">The Hammer (UNIDROIT Art. 3.2.2):</strong> The German seller cannot void the contract. Using an automated AI tool for a commercial contract without human legal review constitutes gross negligence. The seller is fully liable.</span></li>
             </ul>
@@ -220,70 +301,188 @@
                 </div>
             </div>
 
-            <!-- Column 2 (Contractual Strategies) -->
+            <!-- Column 2: The Corporate Playbook -->
             <div class="flex flex-col">
                 <div class="bg-ochre text-white px-4 py-2 rounded-t-xl shrink-0">
-                    <h2 class="text-base font-bold leading-tight">Contractual Strategies Checklist</h2>
+                    <h2 class="text-base font-bold leading-tight">The Corporate Playbook: Actionable Mitigation</h2>
                 </div>
-                <div class="bg-white p-5 rounded-b-xl border-x border-b border-gray-200 border-b-4 border-b-ochre flex-grow shadow-sm flex flex-col justify-center">
-                    <ul class="space-y-4">
-                        <li class="flex items-start">
-                            <i class="fas fa-check-square text-base text-navy mt-0.5 mr-3"></i>
-                            <div>
-                                <span class="font-bold text-gray-900 text-[13px] block">Mandatory Human-in-the-Loop review</span>
-                                <span class="text-gray-600 text-[11px]">Ensure human validation before contract transmission.</span>
+                <div class="bg-white p-5 rounded-b-xl border-x border-b border-gray-200 border-b-4 border-b-ochre flex-grow shadow-sm flex flex-col gap-3 justify-center">
+
+                    <!-- 3-Step Vertical Timeline -->
+                    <div class="relative">
+                        <!-- Vertical line -->
+                        <div class="absolute left-[22px] top-0 bottom-0 w-0.5 bg-navy/20"></div>
+
+                        <!-- Step 1: Pre-Contracting -->
+                        <div class="relative flex items-start mb-3 pl-2">
+                            <div class="w-11 h-11 rounded-full bg-navy flex items-center justify-center shrink-0 z-10 shadow-md">
+                                <i class="fas fa-magnifying-glass text-white text-sm"></i>
                             </div>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-square text-base text-navy mt-0.5 mr-3"></i>
-                            <div>
-                                <span class="font-bold text-gray-900 text-[13px] block">Define AI-use permissions</span>
-                                <span class="text-gray-600 text-[11px]">Explicitly state if, how, and which AI tools can be utilized.</span>
+                            <div class="ml-4 bg-navy/5 border border-navy/10 rounded-lg p-3 flex-1">
+                                <p class="text-[10px] font-bold text-ochre uppercase tracking-wider mb-0.5">Step 1 – Pre-Contracting</p>
+                                <p class="text-[12px] font-bold text-navy leading-snug">Define AI permissions &amp; data limits</p>
+                                <p class="text-[10px] text-gray-600 leading-snug">Explicitly scope which AI tools may be used and for which contract functions before drafting begins.</p>
                             </div>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-square text-base text-navy mt-0.5 mr-3"></i>
-                            <div>
-                                <span class="font-bold text-gray-900 text-[13px] block">Language priority clause</span>
-                                <span class="text-gray-600 text-[11px]">Determine which language version governs in case of discrepancies.</span>
+                        </div>
+
+                        <!-- Step 2: Active Drafting -->
+                        <div class="relative flex items-start mb-3 pl-2">
+                            <div class="w-11 h-11 rounded-full bg-navy flex items-center justify-center shrink-0 z-10 shadow-md">
+                                <i class="fas fa-pen-to-square text-white text-sm"></i>
                             </div>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-square text-base text-navy mt-0.5 mr-3"></i>
-                            <div>
-                                <span class="font-bold text-gray-900 text-[13px] block">Clearly defined Incoterms</span>
-                                <span class="text-gray-600 text-[11px]">Avoid ambiguous summaries of standard delivery/risk terms.</span>
+                            <div class="ml-4 bg-navy/5 border border-navy/10 rounded-lg p-3 flex-1">
+                                <p class="text-[10px] font-bold text-ochre uppercase tracking-wider mb-0.5">Step 2 – Active Drafting</p>
+                                <p class="text-[12px] font-bold text-navy leading-snug">Mandatory Human-in-the-Loop review &amp; Language Priority clauses</p>
+                                <p class="text-[10px] text-gray-600 leading-snug">Every AI output must be validated by a human lawyer. Include a language priority clause specifying which version governs.</p>
                             </div>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-square text-base text-navy mt-0.5 mr-3"></i>
-                            <div>
-                                <span class="font-bold text-gray-900 text-[13px] block">Governing law and arbitration clauses</span>
-                                <span class="text-gray-600 text-[11px]">Secure the jurisdiction for dispute resolution.</span>
+                        </div>
+
+                        <!-- Step 3: Dispute Defense -->
+                        <div class="relative flex items-start pl-2">
+                            <div class="w-11 h-11 rounded-full bg-navy flex items-center justify-center shrink-0 z-10 shadow-md">
+                                <i class="fas fa-shield-halved text-white text-sm"></i>
                             </div>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-square text-base text-navy mt-0.5 mr-3"></i>
-                            <div>
-                                <span class="font-bold text-gray-900 text-[13px] block">Maintain audit trails</span>
-                                <span class="text-gray-600 text-[11px]">Keep records of AI prompts, outputs, and drafts.</span>
+                            <div class="ml-4 bg-navy/5 border border-navy/10 rounded-lg p-3 flex-1">
+                                <p class="text-[10px] font-bold text-ochre uppercase tracking-wider mb-0.5">Step 3 – Dispute Defense</p>
+                                <p class="text-[12px] font-bold text-navy leading-snug">Maintain audit trails &amp; strict arbitration clauses</p>
+                                <p class="text-[10px] text-gray-600 leading-snug">Retain AI prompts, outputs, and drafts as evidence. Secure jurisdiction with clearly defined governing law and arbitration clauses.</p>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+
+                    <!-- Horizontal Bar Chart – Cost Comparison -->
+                    <div class="mt-2 pt-3 border-t border-gray-200">
+                        <p class="text-[11px] font-bold text-gray-500 uppercase tracking-wider mb-3">Cost Comparison: Mitigation vs. Litigation</p>
+                        
+                        <!-- Bar 1: Cost of Human Review (short, ochre) -->
+                        <div class="flex items-center mb-3">
+                            <span class="text-[10px] font-semibold text-gray-700 w-[130px] shrink-0 leading-snug">Cost of Human Review</span>
+                            <div class="flex-1 h-10 bg-gray-100 rounded-r-full overflow-hidden">
+                                <div class="h-full bg-[#b8860b] rounded-r-full flex items-center justify-end pr-3" style="width: 28%;">
+                                    <span class="text-[11px] font-bold text-white">$</span>
+                                </div>
+                            </div>
+                            <span class="text-[11px] font-bold text-gray-500 ml-3 shrink-0">Low</span>
+                        </div>
+
+                        <!-- Bar 2: Cost of Translation/Compliance Penalties (long, red) -->
+                        <div class="flex items-center">
+                            <span class="text-[10px] font-semibold text-gray-700 w-[130px] shrink-0 leading-snug">Translation/Compliance Penalties<br>(Up to $300k+ per violation)<sup>2</sup></span>
+                            <div class="flex-1 h-10 bg-gray-100 rounded-r-full overflow-hidden">
+                                <div class="h-full bg-red-600 rounded-r-full flex items-center justify-end pr-3" style="width: 82%;">
+                                    <span class="text-[11px] font-bold text-white">$$$$</span>
+                                </div>
+                            </div>
+                            <span class="text-[11px] font-bold text-red-600 ml-3 shrink-0">High</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             
         </div>
 
         <!-- Footer/Conclusion -->
-        <div class="mt-auto shrink-0 pt-4">
-            <div class="w-full bg-navy text-white p-5 rounded-xl shadow-md text-center border-t-8 border-ochre relative flex-shrink">
+        <div class="mt-auto shrink-0 pt-3">
+            <div class="w-full bg-navy text-white p-4 rounded-xl shadow-md text-center border-t-8 border-ochre relative flex-shrink">
                 <i class="fas fa-lightbulb absolute -top-4 right-10 text-2xl text-ochre drop-shadow-md"></i>
-                <p class="text-[13px] font-semibold leading-relaxed px-4">
+                <p class="text-[12px] font-semibold leading-relaxed px-4">
                     "Existing international commercial law already provides mechanisms to manage AI-related contractual risk. 
-                    <span class="text-ochre mt-1 block text-[14px]">AI can accelerate international contracting, but liability remains strictly human and contractual."</span>
+                    <span class="text-ochre mt-1 block text-[13px]">AI can accelerate international contracting, but liability remains strictly human and contractual."</span>
                 </p>
             </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 4: Sources & References ==================== -->
+    <div class="a4-page w-[210mm] h-[297mm] mx-auto bg-white p-8 shadow-2xl mb-8 flex flex-col relative print:shadow-none print:mb-0">
+        <div class="mb-4 text-[11px] font-bold text-gray-400 border-b pb-1 uppercase tracking-widest shrink-0">References &amp; Source Material</div>
+
+        <div class="flex-grow flex flex-col gap-4 justify-center">
+            
+            <!-- Section 1: International Legal Frameworks & Trade Rules -->
+            <div>
+                <h2 class="text-sm font-bold text-navy mb-2 border-l-4 border-ochre pl-3">International Legal Frameworks &amp; Trade Rules</h2>
+                <ul class="space-y-1.5 text-[10.5px] text-gray-700 leading-relaxed ml-1">
+                    <li class="flex items-start">
+                        <span class="font-bold text-navy mr-2 shrink-0">•</span>
+                        <span><strong>CISG:</strong> United Nations Convention on Contracts for the International Sale of Goods, Apr. 11, 1980, 1489 U.N.T.S. 3.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="font-bold text-navy mr-2 shrink-0">•</span>
+                        <span><strong>UNIDROIT:</strong> International Institute for the Unification of Private Law (UNIDROIT) Principles of International Commercial Contracts (2016).</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="font-bold text-navy mr-2 shrink-0">•</span>
+                        <span><strong>International Trade Administration (ITA):</strong> <em>Know Your Incoterms.</em> (Outlining the allocation of risk, cost, and responsibility in international trade).</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Section 2: Case Law & Precedent -->
+            <div>
+                <h2 class="text-sm font-bold text-navy mb-2 border-l-4 border-ochre pl-3">Case Law &amp; Precedent</h2>
+                <ul class="space-y-1.5 text-[10.5px] text-gray-700 leading-relaxed ml-1">
+                    <li class="flex items-start">
+                        <span class="font-bold text-navy mr-2 shrink-0">•</span>
+                        <span><em>Moffatt v. Air Canada</em>, 2024 BCCRT 149 (British Columbia Civil Resolution Tribunal).</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="font-bold text-navy mr-2 shrink-0">•</span>
+                        <span>St-Hilaire, I. (2025). "Lying Chatbot Makes Airline Liable: Negligent Misrepresentation in Moffatt v Air Canada." <em>UBC Law Review</em>, Vol. 58, Issue 2.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Section 3: AI Translation Risks & Logistics Compliance -->
+            <div>
+                <h2 class="text-sm font-bold text-navy mb-2 border-l-4 border-ochre pl-3">AI Translation Risks &amp; Logistics Compliance</h2>
+                <ul class="space-y-1.5 text-[10.5px] text-gray-700 leading-relaxed ml-1">
+                    <li class="flex items-start">
+                        <span class="font-bold text-navy mr-2 shrink-0">•</span>
+                        <span><em>Cutting Translation Errors by 20%: What AI Consensus Means for Global Logistics Teams.</em> (2025).</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="font-bold text-navy mr-2 shrink-0">•</span>
+                        <span><em>The High Cost of Error: Critical Risks of Inaccurate Legal Translation in 2026.</em> Translators USA.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Section 4: AI Contracting Validity & Liability -->
+            <div>
+                <h2 class="text-sm font-bold text-navy mb-2 border-l-4 border-ochre pl-3">AI Contracting Validity &amp; Liability</h2>
+                <ul class="space-y-1.5 text-[10.5px] text-gray-700 leading-relaxed ml-1">
+                    <li class="flex items-start">
+                        <span class="font-bold text-navy mr-2 shrink-0">•</span>
+                        <span><em>4 Pillars of AI Contracts Validity: A 2025 Legal Guide.</em> The Kanoon Advisors.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="font-bold text-navy mr-2 shrink-0">•</span>
+                        <span><em>Legal Implications of AI-Generated Contracts: Validity, Enforcement, and Error Liability.</em> Lex Scripta Magazine.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="font-bold text-navy mr-2 shrink-0">•</span>
+                        <span><em>Liability for Artificial Intelligence-Generated Errors in Cross-Border Commercial Contracts.</em></span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="font-bold text-navy mr-2 shrink-0">•</span>
+                        <span>Hall, T. J., &amp; Archer, J. A. (2025). "AI Hallucinations: Imaginary Caselaw, Real Consequences." <em>New York Law Journal</em>.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="font-bold text-navy mr-2 shrink-0">•</span>
+                        <span><em>Agentic AI: The Liability Gap Your Contracts May Not Cover.</em> Clifford Chance.</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Page 4 Footer -->
+        <div class="mt-auto pt-3 border-t border-gray-200 text-center shrink-0">
+            <p class="text-[9px] text-gray-400 italic">
+                This poster is an academic overview and does not constitute legal advice. Always consult qualified legal professionals for specific contractual matters.
+            </p>
         </div>
     </div>
 
